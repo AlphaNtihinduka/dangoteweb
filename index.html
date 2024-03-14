@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangote Sugar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="./assets/Dangote-Sugar-e1646324288667.jpg" alt="Banner Image">
+      <div class="audio">
+        <button id="listenButton">Click to Listen</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="thanks-section">
+      <h2>Thank You for Choosing Dangote Sugar!</h2>
+      <p>We greatly appreciate your support. As a token of our gratitude, we're excited to inform you about the additional benefits you receive when purchasing Dangote Sugar.</p>
+    </section>
+    <section class="thanks-section">
+      <h2>runlinc easy coding</h2>
+      <p>runlinc is a new AI / IoT invention from South Australia. It is a web page inside a wi-fi chip. It is a rapid development platform for IoT, AI, and STEM </p>
+      <img src="./assets/runlinc_infographicWeb.jpg" alt="Project 1 Image">
+    </section>
+    <section class="benefits-section">
+      <h2>Benefits of Buying Dangote Sugar</h2>
+      <p>By purchasing Dangote Sugar, not only do you enjoy its sweetness, but you also contribute to your child's future in STEM.</p>
+      <ul>
+        <li>Help your children develop AI/IoT projects for STEM competitions.</li>
+        <li>Increased chances of winning scholarship competitions.</li>
+        <li>Reduce your financial burden on education expenses.</li>
+      </ul>
+    </section>
+    <section class="share-section">
+      <h2>Spread the Word</h2>
+      <p>Help us reach more families by letting your friends know about the benefits of choosing Dangote Sugar.</p>
+    </section> 
+    <h2 class="iotprojects-title">AI/IoT Projects</h2>
+    <section class="projects-section">
+      <div class="project-card">
+        <img src="./assets/Dangote-Sugar-e1646324288667.jpg" alt="Project 1 Image">
+        <h3>Accelerator controlled Robot</h3>
+        <p>Young INVENTOR FOR SOCIAL GOOD Michael, programmed runlinc using the iPad Accelerometer to control a wifi Robot</p>
+        <a href="https://youtu.be/pXxev4KnXSE">Learn More</a>
+      </div>
+      <div class="project-card">
+        <img src="./assets/alarm.png" alt="Project 2 Image">
+        <h3>AI Voice intruder alert </h3>
+        <p>This project aims to create a smart intruder alarm system that can detect unauthorized access to a premises and alert the owners</p>
+        <a href="https://youtu.be/6QRhy9VEDBs">Learn More</a>
+      </div>
+      <div class="project-card">
+        <img src="./assets/watertank.jpg" alt="Project 3 Image">
+        <h3> Fluid Level Sensor</h3>
+        <p>Most, if not all people, have a rainwater tank. It can be an issue if it runs out unexpectedly. How can we measure how much water is left, and alert the user when it's almost empty?</p>
+        <a href="https://runlinc.com/E32W%20projects/Intermediate%20E32W/Project%20I4%20-%20Fluid%20Level%20Sensor%20(runlinc%20E32W%20version).pdf">Learn More</a>
+      </div>
+      <div class="project-card">
+        <img src="./assets/61aojoXP0QL.jpg" alt="Project 4 Image">
+        <h3>Light to energy</h3>
+        <p>Convert the energy of incoming light into electrical signals that can be analysed and interpreted.</p>
+        <a href="https://www.youtube.com/watch?v=w6XDQ5GlMG8">Learn More</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("listenButton").addEventListener("click", function() {
+      var msg = new SpeechSynthesisUtterance("By purchasing Dangote Sugar, not only do you enjoy its sweetness, but you also contribute to your future of your child in STEM. We Help your children develop AI/IoT projects for STEM competitions. Increasing their chances of winning scholarship competitions. hence Reducing your financial burden on education expenses.");
+      window.speechSynthesis.speak(msg);
+    });
+  </script>
+</body>
+</html>

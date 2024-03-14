@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+header {
+  width: 100%;
+  text-align: center; /* Center align header content */
+}
+
+#listenButton {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  animation: shake 0.5s infinite alternate; /* Apply shaking animation */
+}
+
+#listenButton:hover {
+  background-color: #cc0000;
+}
+
+/* Shaking animation */
+@keyframes shake {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+.audio-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.audio {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #ffc107; /* Yellow text color */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the flex items */
+}
+
+.project-card {
+  border: 1px solid #555; /* Dark border color */
+  padding: 10px;
+  margin: 10px;
+  background-color: #444; /* Dark background color */
+  text-align: center; /* Center align project card content */
+  width: calc(50% - 20px); /* Set width to half of the container minus margin */
+  max-width: 300px; /* Set maximum width for larger screens */
+}
+
+.project-card h3 {
+  margin-bottom: 5px;
+  color: #4caf50; /* Green text color */
+}
+
+.project-card p {
+  margin-bottom: 10px;
+  color: #ccc; /* Light text color */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-card a:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 20px); /* Set width to full width minus margin */
+  }
+}
